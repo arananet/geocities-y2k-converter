@@ -1,8 +1,8 @@
-# {{PROJECT_NAME}}
+# geocities-y2k-converter
 
-{{BADGES}}
+![OpenSpec](https://img.shields.io/badge/OpenSpec-enforced-blueviolet) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-> {{PROJECT_DESCRIPTION}}
+> A Claude Code skill that converts modern websites into retro Geocities / Y2K-era style
 
 ---
 
@@ -10,24 +10,43 @@
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/{{GITHUB_OWNER}}/{{PROJECT_NAME}}.git
-cd {{PROJECT_NAME}}
+git clone https://github.com/arananet/geocities-y2k-converter.git
+cd geocities-y2k-converter
 bash setup.sh
 
-# 2. Run
-{{TEST_COMMAND}}
+# 2. Use the skill in Claude Code
+/geocities-y2k-converter
 ```
-
-<!--
-Replace this section with how to actually install and run YOUR project:
-language version, dependencies, env vars, run command, etc.
--->
 
 ---
 
 ## Usage
 
-<!-- TODO: Show the smallest useful example of your project in action. -->
+Invoke the skill from Claude Code on any website project:
+
+```
+/geocities-y2k-converter
+```
+
+Claude will inspect your site's stack, add a persisted retro toggle, wire up
+`assets/geocities.css`, and build a self-contained `GeoCitiesHome` component
+— all without touching the existing modern design.
+
+Copy the bundled assets into your project:
+```bash
+cp skills/geocities-y2k-converter/assets/geocities.css <your-project>/public/
+cp skills/geocities-y2k-converter/assets/template.html <your-project>/  # plain HTML reference
+```
+
+### Skill structure
+
+```
+skills/geocities-y2k-converter/
+├── skill.md              # skill definition & conversion guide
+└── assets/
+    ├── geocities.css     # drop-in Y2K stylesheet (scoped under .geocities-page)
+    └── template.html     # reference page with {{PLACEHOLDER}} slots
+```
 
 ---
 

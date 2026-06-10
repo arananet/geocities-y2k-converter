@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  GeoCities / Y2K reference template.
+  Self-contained: links geocities.css and shows every building block.
+  Replace the {{PLACEHOLDER}} content with the target site's real data.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{SITE_NAME}} - Homepage</title>
+  <link rel="stylesheet" href="geocities.css" />
+</head>
+<body class="geocities-page">
+
+  <!-- Top options bar (toggle + language live here) -->
+  <div class="gc-nav">
+    <button onclick="history.back()">✨ Return to the Future</button>
+    <span class="blink">⚠ SITE UNDER CONSTRUCTION! ⚠</span>
+  </div>
+
+  <!-- Marquee welcome banner -->
+  <marquee scrollamount="6" class="gc-rainbow" style="font-size:22px;margin-top:14px;">
+    ★ ★ ★ WELCOME TO MY HOMEPAGE! ★ ★ ★ Best viewed in Netscape Navigator at 800x600 ★ ★ ★
+  </marquee>
+
+  <!-- Header -->
+  <div class="gc-panel">
+    <div class="gc-title">{{SITE_NAME}}</div>
+    <h1 class="gc-chrome" style="font-size:26px;font-weight:900;">{{TAGLINE}}</h1>
+    <p style="color:#fff;">
+      <span class="blink" style="color:#ff1493;">NEW!</span> {{SUBTITLE}}
+    </p>
+    <p style="margin-top:10px;">
+      <span class="gc-construction">🚧 UNDER CONSTRUCTION 🚧</span>
+    </p>
+  </div>
+
+  <hr class="gc-holo" />
+
+  <!-- About -->
+  <div class="gc-panel">
+    <h2 class="gc-rainbow" style="font-size:26px;">📟 About 📟</h2>
+    <p style="color:#fff;font-size:16px;line-height:1.6;">{{ABOUT_TEXT}}</p>
+  </div>
+
+  <hr class="gc-holo" />
+
+  <!-- Cool links -->
+  <div class="gc-panel">
+    <h2 class="gc-rainbow" style="font-size:26px;">🔗 My Cool Links 🔗</h2>
+    <ul class="gc-link-list">
+      <li><a href="#">{{LINK_1}}</a> - description</li>
+      <li><a href="#">{{LINK_2}}</a> - description</li>
+      <li><a href="#">{{LINK_3}}</a> - description</li>
+    </ul>
+  </div>
+
+  <hr class="gc-holo" />
+
+  <!-- Web ring -->
+  <div class="gc-panel">
+    <h2 class="gc-rainbow" style="font-size:22px;">🏆 Web Ring 🏆</h2>
+    <span class="gc-button88">NETSCAPE NOW!</span>
+    <span class="gc-button88">MADE ON A MAC</span>
+    <span class="gc-button88">HTML 4.0</span>
+    <span class="gc-button88">Y2K READY</span>
+  </div>
+
+  <!-- Guestbook + counter -->
+  <div class="gc-panel">
+    <p>
+      <a class="gc-gloss-btn pink" href="mailto:{{EMAIL}}">📖 Sign my Guestbook</a>
+      <a class="gc-gloss-btn" href="mailto:{{EMAIL}}">✉ webmaster@{{DOMAIN}}</a>
+    </p>
+    <p style="margin-top:12px;color:#fff;font-size:14px;">
+      You are visitor number:<br />
+      <span class="gc-counter">0024601</span>
+    </p>
+  </div>
+
+  <hr class="gc-holo" />
+
+  <footer style="color:#c0c0c0;font-size:13px;padding:0 12px;">
+    <p>{{COPYRIGHT}}</p>
+    <p class="blink">Made with Notepad and lots of ❤</p>
+  </footer>
+
+</body>
+</html>
